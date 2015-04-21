@@ -1,0 +1,24 @@
+﻿<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	<rdf:Property rdf:about="http://xmlns.com/foaf/0.1/car" rdfs:label="car" 
+	  rdfs:comment="Just car.">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</rdf:Property>
+	<foaf:Person rdf:ID="me">
+	<foaf:name>Maciej Owczarczak</foaf:name>
+	<foaf:title>Gen</foaf:title>
+	<foaf:givenname>Maciej</foaf:givenname>
+	<foaf:family_name>Owczarczak</foaf:family_name>
+	<foaf:nick>Batman</foaf:nick>
+	<foaf:car>Batmobil</foaf:car>
+	<foaf:mbox_sha1sum>0b751f01ed9676b0e121c505a6718fd2b5042c9c</foaf:mbox_sha1sum>
+	<foaf:depiction rdf:resource="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Hf_9GdCUp-StmRVeN4xzfnV88VqwyGs7SyH7xisqETziZwqggA"/>
+	<foaf:knows>
+	<foaf:Person>
+	<foaf:name>Mateusz</foaf:name>
+	<foaf:mbox_sha1sum>a193608a84520600d23b7bcc2438fcb7131b9912</foaf:mbox_sha1sum></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>

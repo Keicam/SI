@@ -1,0 +1,25 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#me> a foaf:Person ;
+    foaf:car "Batmobil" ;
+    foaf:depiction <https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Hf_9GdCUp-StmRVeN4xzfnV88VqwyGs7SyH7xisqETziZwqggA> ;
+    foaf:family_name "Owczarczak" ;
+    foaf:givenname "Maciej" ;
+    foaf:knows [ a foaf:Person ;
+            foaf:mbox_sha1sum "a193608a84520600d23b7bcc2438fcb7131b9912" ;
+            foaf:name "Mateusz" ] ;
+    foaf:mbox_sha1sum "0b751f01ed9676b0e121c505a6718fd2b5042c9c" ;
+    foaf:name "Maciej Owczarczak" ;
+    foaf:nick "Batman" ;
+    foaf:title "Gen" .
+
+foaf:car a rdf:Property,
+        <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "car" ;
+    rdfs:comment "Just car." ;
+    rdfs:domain foaf: ;
+    rdfs:range xsd:string .
